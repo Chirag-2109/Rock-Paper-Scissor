@@ -1,0 +1,68 @@
+
+.game {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.choices,
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.battle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 35px 0;
+}
+
+.player {
+  flex: 1;
+  max-width: 250px;
+  padding: 20px 10px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.count {
+  font-size: 36px;
+}
+
+@media (max-width: 500px) {
+  .battle {
+    gap: 10px;
+  }
+
+  .player {
+    padding: 12px 5px;
+  }
+
+  .player h1 {
+    font-size: 20px;
+  }
+}
